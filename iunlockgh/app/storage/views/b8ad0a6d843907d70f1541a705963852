@@ -1,0 +1,106 @@
+<?php $__env->startSection('sidebar'); ?>
+
+<div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+          <br>
+            <li ><a href="<?php echo URL::to('admin/dashboard'); ?>"><i class="glyphicon glyphicon-dashboard blue"></i> Dashboard <span class="sr-only">(current)</span></a></li>
+            <li><a href="<?php echo URL::to('admin/users'); ?>"><i class="glyphicon glyphicon-user blue"></i> Registered users</a></li>
+            <li><a href="<?php echo URL::to('admin/messages'); ?>"><i class="glyphicon glyphicon-comment blue"></i> Send Messages</a></li>
+            <li><a href="<?php echo URL::to('admin/order'); ?>"><i class="glyphicon glyphicon-folder-open blue"></i> Order history</a></li>
+            <li><a href="<?php echo URL::to('admin/payments'); ?>"><i class="glyphicon glyphicon-credit-card blue"></i> Payments</a></li>
+            <li><a href="<?php echo URL::to('admin/unlock'); ?>"><i class=" glyphicon glyphicon-question-sign blue"></i> Unlock request</a></li>
+            <li class="active"><a href="<?php echo URL::to('admin/categorys'); ?>"><i class="  glyphicon glyphicon-pencil blue"></i> Add products</a></li>
+            <li><a href="<?php echo URL::to('admin/phones'); ?>"><i class=" glyphicon glyphicon-phone blue"></i> Phones</a></li>
+            <li ><a href="<?php echo URL::to('admin/networks'); ?>"><i class=" glyphicon glyphicon-signal blue"></i> Networks</a></li>
+            <li><a href="<?php echo URL::to('report'); ?>"><i class=" glyphicon glyphicon-send blue"></i> Inbox</a></li>
+            <li><a href="<?php echo URL::to('FAQs'); ?>"><i class="glyphicon glyphicon-question-sign blue"></i> FAQs</a></li>
+            <li><a href="<?php echo URL::to('news'); ?>"><i class="glyphicon glyphicon-question-sign blue"></i> News</a></li>
+            <li><a href="<?php echo URL::to('FAQs'); ?>"><i class="glyphicon glyphicon-question-sign blue"></i> Unlocking sites</a></li>
+          </ul>
+          <br>
+          </div>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('header'); ?>
+
+<i class="glyphicon glyphicon-folder-open yellow"></i> Add Products
+
+<?php $__env->stopSection(); ?>
+
+
+
+<?php $__env->startSection('content'); ?>
+
+<?php echo $__env->make('common.notification', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<h3>Create Category</h3>
+<?php echo Form::open(array('url'=>'category', 'method'=>'POST')); ?>
+
+<input type="text" class="form-control" placeholder="create category" name="name"><br>
+<button class="btn btn-success"> create category</button>
+<?php echo Form::close(); ?>
+
+<br>
+
+<h3>Add Products</h3>
+<?php echo Form::open(array('url'=>'product', 'method'=>'POST')); ?>
+
+<select class="form-control" name="category_id">
+<?php foreach($categorys as $category): ?>
+<option value="<?php echo $category->id; ?>"><?php echo $category->name; ?></option>
+<?php endforeach; ?>
+</select>
+<input type="text" class="form-control" placeholder="Enter product name" name="product_name">
+<textarea col="10" rows="4" class="form-control" placeholder="Enter Product description" name="description"></textarea>
+<br>
+<!-- <input type="text" class="form-control" placeholder="create category" name="name"><input type="text" class="form-control" placeholder="create category" name="name"> -->
+<button class="btn btn-success"> Create Product</button>
+<?php echo Form::close(); ?>
+
+<br>
+
+<h3>Add Country</h3>
+<?php echo Form::open(array('url'=>'country', 'method'=>'POST')); ?>
+
+<select class="form-control" name="category_id">
+<?php foreach($categorys as $category): ?>
+<option value="<?php echo $category->id; ?>"><?php echo $category->name; ?></option>
+<?php endforeach; ?>
+</select>
+<select class="form-control" name="category_name">
+<?php foreach($categorys as $category): ?>
+<option value="<?php echo $category->name; ?>"><?php echo $category->name; ?></option>
+<?php endforeach; ?>
+</select>
+<input type='text' class="form-control" placeholder="Enter country" name="country_name"><br>
+
+<button class="btn btn-success">Save country</button>
+<?php echo Form::close(); ?>
+
+
+<h3>Add Networks</h3>
+<?php echo Form::open(array('url'=>'network', 'method'=>'POST')); ?>
+
+<select class="form-control" name="category_id">
+<?php foreach($categorys as $category): ?>
+<option value="<?php echo $category->id; ?>"><?php echo $category->name; ?></option>
+<?php endforeach; ?>
+</select>
+<select class="form-control" name="country_id">
+<?php foreach($countrys as $country): ?>
+<option value="<?php echo $country->id; ?>"><?php echo $country->country_name; ?> ------------------- <b><?php echo $country->category_name; ?></b></option>
+<?php endforeach; ?>
+</select>
+<input type="text" class="form-control" placeholder="Enter network name" name="network_name">
+<input type="text" class="form-control" placeholder="Enter product price" name="price">
+<input type="text" class="form-control" placeholder="Enter delivery time" name="delivery_time">
+<!-- <textarea col="10" rows="5" class="form-control" placeholder="Enter Product description" name="description"></textarea> -->
+<br>
+<!-- <input type="text" class="form-control" placeholder="create category" name="name"><input type="text" class="form-control" placeholder="create category" name="name"> -->
+<button class="btn btn-success"> Create Product</button>
+<?php echo Form::close(); ?>
+
+<?php $__env->stopSection(); ?>
+
+
+
+<?php echo $__env->make('layout.admin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

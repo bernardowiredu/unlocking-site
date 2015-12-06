@@ -1,0 +1,11 @@
+<?php $__env->startSection('content'); ?>
+
+<input type="text" class="form-control Input-lg" placeholder="Select network" >
+
+
+
+
+
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.reseller', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

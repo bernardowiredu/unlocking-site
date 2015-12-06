@@ -1,0 +1,103 @@
+<?php $__env->startSection('sidebar'); ?>
+
+<div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+          <br>
+            <li><a href="<?php echo URL::to('dashboard'); ?>"><i class="glyphicon glyphicon-dashboard blue"></i> Dashboard <span class="sr-only">(current)</span></a></li>
+            <li><a href="<?php echo URL::to('editprofile'); ?>"><i class="glyphicon glyphicon-user blue"></i> Edit profile</a></li>
+            <li><a href="<?php echo URL::to('messages'); ?>"><i class="glyphicon glyphicon-comment blue"></i> Messages <sup><span class="badge"> 3</span></sup></a></li>
+            <li class="active"><a href="<?php echo URL::to('order-history'); ?>"><i class="glyphicon glyphicon-folder-open blue"></i> Order history</a></li>
+            <li><a href="<?php echo URL::to('payments'); ?>"><i class="glyphicon glyphicon-credit-card blue"></i> Add funds</a></li>
+            <li><a href="<?php echo URL::to('unlock-request'); ?>"><i class="glyphicon glyphicon-phone blue"></i> Unlock request</a></li>
+            <li><a href="<?php echo URL::to('track-order'); ?>"><i class=" glyphicon glyphicon-search blue"></i> Track order</a></li>
+            <li><a href="<?php echo URL::to('report'); ?>"><i class=" glyphicon glyphicon-send blue"></i> Reports</a></li>
+            <li><a href="<?php echo URL::to('FAQs'); ?>"><i class="glyphicon glyphicon-question-sign blue"></i> FAQs</a></li>
+          </ul>
+          <br>
+        </div>
+
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('header'); ?>
+
+<img src="../public/img/folder_modified.png"></i> Order history
+
+<?php $__env->stopSection(); ?>
+
+
+
+<?php $__env->startSection('content'); ?>
+
+ <?php echo $__env->make('common.notification', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+  <div role="tabpanel">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs well well-sm mh" role="tablist">
+    <li role="presentation" class="active"><a class="yellow"  href="#home" aria-controls="home" role="tab" data-toggle="tab">Completed orders <span class="label label-success"> 23</span></a></li>
+    <li role="presentation"><a class="yellow" href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Cancelled orders <span class="label label-danger"> 8 </span></a></li>
+    <li role="presentation"><a class="yellow" href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Pending Orders <span class="label label-info"> 5 </span></a></a></li>
+    <!-- <li role="presentation"><a class="yellow" href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+  --> </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">
+   
+    <h4 class="jbt">Completed orders</h4>
+   
+	<div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr class="panel panel-success green">
+                  <th>#</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th><i class="glyphicon glyphicon-cog jbt"></i> Action</th>
+                </tr>
+              </thead>
+              <?php foreach($payment as $payment): ?>
+              <tbody>
+                <tr>
+                  <td><?php echo $payment->product_model; ?></td>
+                  <td><?php echo $payment->network_name; ?></td>
+                  <td><?php echo $payment->price; ?></td>
+                  <td><?php echo $payment->imei; ?></td>
+                  <td><?php echo $payment->delivery_time; ?></td>
+				          <td><?php echo $payment->telephone; ?></td>
+                  
+                   <td><div class="label label-warning"><?php echo $payment->status; ?></div></td>
+                
+                  <td><button class="btn btn-small btn-default" onclick=" return ConfirmDelete('yes', 'no')"><i class=" glyphicon glyphicon-trash"></i></button></td>
+                </tr>
+               </tbody>
+               <?php endforeach; ?>
+              <tfoot>
+              </tfoot>
+            </table>
+          </div>	
+    </div>
+    <div role="tabpanel" class="tab-pane" id="profile">
+   	<br>
+    No history yet
+     <br><br>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="messages">
+    	
+    </div>
+    <div role="tabpanel" class="tab-pane" id="settings">
+    	
+    </div>
+  </div>
+
+</div>
+<br>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.dashboard', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

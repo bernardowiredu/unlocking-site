@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <style type="text/css">
+
+    body{
+     background:#6F1518 ;
+    }
+
+    </style>
+
+    <title></title>
+
+    <!-- Bootstrap core CSS -->
+     <!-- <link href="../public/css/bootstrap.css" rel="stylesheet"> -->
+     <link href="../css/bootstrap.css" rel="stylesheet">
+     <link href="../css/stength.css" rel="stylesheet">
+     <!-- <link href="../public/css/notice.css" rel="stylesheet"> -->
+     <!-- <link href="../public/css/folder.css" rel="stylesheet"> -->
+       <!--  <link href='https://fonts.googleapis.com/css?family=Oswald:300,400' rel='stylesheet' type='text/css'>
+    --> <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
+   
+    <link href="../css/particle.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+     <!-- <link href="../public/css/navbar.css" rel="stylesheet">
+     <link href="../public/css/sticky-footer-navbar.css" rel="stylesheet"> -->
+     <link href="../css/sticky-footer-navbar.css" rel="stylesheet">
+     <!-- <link href="../public/css/breakingNews.css" rel="stylesheet">
+     <link href="../public/css/signin.css" rel="stylesheet">
+    <link href="../public/css/waitMe.css" rel="stylesheet">
+     <link href="../public/css/animations.css" rel="stylesheet"> -->
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+  <div class="container">
+
+ 
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+           <a class="navbar-brand" href="{{URL::to('/')}}"><!-- <i class="glyphicon glyphicon-phone yellow"></i> -->Perfect<span class="yellow">UnlockGh</span></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <!-- <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">IMEI CHECKER <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="{{URL::to('')}}">Network Lock Check</a></li>
+                  <li><a href="{{URL::to('order-status')}}">Blacklisted/Barred/Clean Check</a></li>
+                  <li><a href="{{URL::to('signout')}}">Free ICLOUD Status Check</a></li>
+                  <li><a href="{{URL::to('signout')}}">Sprint USA - All iPhone Eligibility Test Clean/Blacklist/Unpaid Bill</a></li>
+                  
+                  </ul>
+              </li> -->
+              <li><a href="#"><i class="glyphicon glyphicon-user small"></i> LOGIN</a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-user small"></i> REGISTER</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+   
+
+    @yield('content')
+
+
+
+    <br><br><br>
+
+    </div>
+
+
+  
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54bfd49f46970d36" async="async"></script>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../public/js/jQuery.js"></script>
+    <script src="../public/js/bootstrap.min.js"></script> 
+    <script src="../public/js/vendor/holder.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>  
+    <script src="../public/js/jquery-1.8.2.min.js"></script>
+    <script src="../public/js/jquery.breaking.js"></script>
+    <script src="../public/js/bootstrap-tooltip.js"></script>
+    <script src="../public/js/waitMe.js"></script>
+    <script src="../public/js/css3-animate.js"></script>
+     <script src="../public/js/jquery-2.1.3.min.js"></script>
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src='js/css3-animate-it.js'></script>
+    <script src='js/strength.js'></script>
+    <script type="text/javascript">
+
+     $('.feed-2').breakingNews({
+        url: 'http://feeds.feedburner.com/mobileburn/news?format=xml',
+        feedSize: {
+            height: '30px',
+            width: '900px'
+        },
+        numberToShow: 10,
+        refresh: 2000,
+        effect: 'tricker',
+        effectDuration: 50,
+        onComplete: function() {
+            $(this).prepend('<div class="feed-title-2" />');
+            $('.feed-title-2').html(arguments[0].responseData.feed.title);
+        }
+    });
+
+
+     $('#exampleInputEmail1').tooltip( 'please enter your username' );
+     $('#email').tooltip( 'please enter a valid email address' );
+
+
+    </script>
+
+
+ 
+</body>
+</html>

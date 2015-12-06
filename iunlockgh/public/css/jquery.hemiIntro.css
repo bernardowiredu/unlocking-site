@@ -1,0 +1,20 @@
+.hemi-intro-backdrop {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 500; }
+
+.hemi-intro-selected {
+  z-index: 600;
+  position: relative; }
+
+.hemi-intro-popover {
+  z-index: 600; }
+
+.hemi-intro-buttons-holder {
+  padding: 10px 0; }
+
+/*# sourceMappingURL=jquery.hemiIntro.css.map */

@@ -1,0 +1,28 @@
+<?php $__env->startSection('header'); ?>
+<h1 class="text-center uptest">search results for "<?php echo $keyword; ?>"</h1>
+
+<?php $__env->stopSection(); ?>
+
+
+
+<?php $__env->startSection('content'); ?>
+<br>
+<div class="nav">
+<div class="well well-sms mf">
+<h2 class="text-center blck txt-shadow"><img src="../public/img/zoom_out.png"> Search result(s) for "<b><?php echo $keyword; ?></b>"</h2>
+</div>
+<?php foreach($products as $product): ?>
+<div class="col-xs-6 col-md-3 ">
+ <a href="#" class="thumbnail mf">
+      <img src="img/iphone6-plus.jpg" alt="product" width="100" height="70">
+    </a>
+    <div class="caption me2">
+    <p class="text-center"><a class="whyt" href="<?php echo URL::to('product/' .$product->id); ?>"><spans><?php echo $product->product_name; ?></span></a></p>
+   </div>
+<p></p>
+</div>
+
+<?php endforeach; ?>
+</div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.products', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

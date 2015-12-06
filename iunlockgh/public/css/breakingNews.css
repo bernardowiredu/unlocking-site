@@ -1,0 +1,77 @@
+
+.feed-2{
+ margin-left: 50px;
+  margin-top: 3px;
+  width: 1000px;
+}
+.feed-2{
+ margin-left: 50px;
+  margin-top: 3px;
+  width: 1000px;
+}
+
+
+
+.feed-title-2 {
+  background:transparent;/*#000*/
+  float: left;
+  /*margin-top: -8px;
+  margin-left: 12px;
+  padding: 8px;
+  margin-right: 12px;*/
+  color: #F9B107;
+  font-size: 17px;
+  height: 30px;
+  font-weight: bold;
+
+}
+.breaking-news {
+   background:transparent;/*background: #000;*/
+  padding: 8px 6px;
+  position: relative;
+   font-size: 14px;
+
+
+}
+
+.feed-entries { display: block; }
+
+.breaking-news a {
+  -webkit-transition: color 0.3s ease-in;
+  -moz-transition: color 0.3s ease-in;
+  -o-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+}
+
+.breaking-news a {
+  color: #555555;
+  font-size: 17px;
+  text-decoration: none;
+  padding-left: 100px;
+  font-weight: bold;
+}
+
+.breaking-news2 a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  padding-left: 100px;
+  font-weight: bold;
+}
+
+.breaking-news a:hover { text-decoration: underline; }
+
+.scroll-effect {
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.scroll-effect .feed-entries {
+  overflow: hidden;
+  top: 0;
+}
+
+.scroll-effect .feed-entries a { display: block; }
+
+.uscore { color: #fff; }

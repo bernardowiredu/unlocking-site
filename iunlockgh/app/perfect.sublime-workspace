@@ -1,0 +1,288 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"f",
+				"font-weight"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"t",
+				"text-transform"
+			],
+			[
+				"back",
+				"background-image"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 104.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/iunlockgh"
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/iunlockgh/app/config/database.php",
+		"/C/xampp/htdocs/iunlockgh/xdebug.sublime-workspace",
+		"/C/xampp/htdocs/htdocs/iunlockgh/xdebug.sublime-project",
+		"/C/xampp/htdocs/htdocs/iunlockgh/app/config/database.php",
+		"/C/Users/bernard-kissi/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/bernard-kissi/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/bernard-kissi/AppData/Roaming/Sublime Text 3/Packages/User/JSON.sublime-settings",
+		"/C/Users/bernard-kissi/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/bernard-kissi/AppData/Roaming/Sublime Text 3/Packages/Xdebug Client/Xdebug.sublime-settings",
+		"/C/xampp/php/php.ini",
+		"/C/xampp/htdocs/iunlockgh/public/css/bootstrap.css",
+		"/C/xampp/htdocs/iunlockgh/app/views/orders/make-payment.blade.php",
+		"/C/xampp/htdocs/iunlockgh/app/views/products/confirm-order.blade.php",
+		"/C/xampp/htdocs/iunlockgh/app/views/products/index.blade.php",
+		"/C/xampp/htdocs/iunlockgh/app/views/layout/dashboard.blade.php",
+		"/C/xampp/htdocs/iunlockgh/app/views/hello.blade.php",
+		"/C/xampp/htdocs/iunlockgh/public/css/comments.css",
+		"/C/xampp/htdocs/iunlockgh/public/css/breakingNews.css",
+		"/C/xampp/htdocs/iunlockgh/app/controllers/PaymentController.php",
+		"/C/xampp/htdocs/iunlockgh/app/routes.php",
+		"/C/xampp/htdocs/iunlockgh/app/views/users/forgotten-password.blade.php",
+		"/C/xampp/htdocs/iunlockgh/app/views/layout/details.blade.php",
+		"/C/xampp/htdocs/iunlockgh/app/views/help/unlock-help.blade.php",
+		"/C/xampp/htdocs/iunlockgh/app/views/orders/order-status.blade.php",
+		"/C/xampp/htdocs/iunlockgh/app/views/users/dashboard.blade.php",
+		"/C/xampp/htdocs/iunlockgh/app/views/orders/pay.blade.php",
+		"/C/xampp/htdocs/iunlockgh/app/views/products/product.blade.php",
+		"/C/xampp/htdocs/iunlockgh/app/views/common/notification.blade.php",
+		"/C/xampp/htdocs/iunlockgh/app/views/users/register.blade.php",
+		"/C/xampp/htdocs/iunlockgh/app/views/users/login.blade.php",
+		"/C/xampp/htdocs/iunlockgh/app/views/payments/payment-successful.blade.php",
+		"/C/xampp/htdocs/iunlockgh/app/views/request/unlock-request.blade.php",
+		"/C/xampp/htdocs/iunlockgh/app/views/help/FAQs.blade.php",
+		"/C/xampp/htdocs/iunlockgh/app/views/help/report.blade.php",
+		"/C/xampp/htdocs/iunlockgh/app/views/orders/track-order.blade.php",
+		"/C/xampp/htdocs/iunlockgh/app/views/payments/index.blade.php",
+		"/C/xampp/htdocs/iunlockgh/app/views/orders/order-history.blade.php",
+		"/C/xampp/htdocs/iunlockgh/app/views/messages/index.blade.php",
+		"/C/xampp/htdocs/iunlockgh/app/views/users/editprofile.blade.php",
+		"/C/xampp/htdocs/iunlockgh/app/views/layout/product.blade.php",
+		"/C/xampp/htdocs/iunlockgh/app/views/layout/payment.blade.php",
+		"/C/xampp/htdocs/iunlockgh/app/views/layout/main.blade.php",
+		"/C/xampp/htdocs/iunlockgh/app/views/layout/products.blade.php",
+		"/C/xampp/htdocs/iunlockgh/app/views/imei-checker/index.blade.php",
+		"/C/Users/bernard-kissi/Desktop/iunlockgh.sql"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"body",
+			"application/x-json",
+			"MIME",
+			"0503214360",
+			"label",
+			"body",
+			"mb",
+			"container",
+			"blue",
+			"thumbnail",
+			"container",
+			"label",
+			"container",
+			"body",
+			" body"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "perfect.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 286.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

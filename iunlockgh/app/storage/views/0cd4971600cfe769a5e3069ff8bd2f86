@@ -1,0 +1,2 @@
+<?php $__env->startSection(''); ?>
+<?php echo $__env->make('layout.admin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
