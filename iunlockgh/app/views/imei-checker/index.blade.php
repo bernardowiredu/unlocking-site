@@ -3,7 +3,7 @@
 
 @section('header')
 
-<h1 class="text-center">IMEI CHECK SERVICES</h1>
+<h1 class="text-center blck">IMEI CHECK SERVICES</h1>
 @stop
 
 
@@ -34,18 +34,18 @@
 
 </div>
 
-<h4 class="well mb yellow"><b class="yellow">IMEI Checker – Check Carrier, Lock Status and Firmware, Model name....</b></h4>
+<h4 class="well well-sm"><b class="blue">IMEI Checker – Check Carrier, Lock Status and Firmware, Model name....</b></h4>
 
 IMEI checking service is to check info like carrier name, lock status, model name, Serial, iOS firmware, ICCID, Activation status and some other details. 
 
 Details will be sent to you via Email. Delivery Time 1-30 minutes .
 <p></p>
 <p>How to Find iPhone IMEI Number?
-You can find it by typing <b class="yellow">*#06#</b> on Keypad. Alternatively, you can check it on SIM tray. </p>
+You can find it by typing <b class="blue">*#06#</b> on Keypad. Alternatively, you can check it on SIM tray. </p>
 
 <br>
 
-<div class="panel panel-default">
+<div class="panel panel-primary">
   <div class="panel-heading blck">IMEI CHECKER<span class="pull-right"><i class="glyphicon glyphicon-phone"></i></span></div>
   <div class="panel-body mf">
 

@@ -175,13 +175,13 @@
         </div>
           <div class="col-sm-1 col-md-1 line2">
         <li>
-         <li><a class="txt" href="{{URL::to('products/8')}}"><i class="glyphicon glyphicon-phone yellow"></i>Sony</a></li>
+         <li><a class="txt" href="{{URL::to('products/8')}}"><i class="glyphicon glyphicon-phone green"></i>Sony</a></li>
             <!-- Contact helpline on <i class="glyphicon glyphicon-earphone yellow"></i> 0244049419 -->
          </li>
         </div>
-        <div class="col-sm-1 col-md-2">
+        <div class="col-sm-1 col-md-2 line2">
         <li>
-         <li>
+         <li class="blck">
             Contact <i class="glyphicon glyphicon-phone-alt blue"></i> 0244049419
          </li>
         </div>
@@ -195,7 +195,7 @@
 <div class="well well-sm"><h4 class="yellow"><div class="feed-2"></div></h4></div>
    
   
-<div class="well well-sm mb"><h4 class="yellow"></i> 
+<div class="well well-sm "><h4 class="yellow"></i> 
 
 @yield('header')
 
@@ -206,8 +206,8 @@
   @yield('content')
    </div> 
    <br> 
-   <div class="col-sm-6 col-md-3 cover ny">
-   <h4 class="yellow"><b>Start unlocking here</b></h4>
+   <div class="col-sm-6 col-md-3 cover f5">
+   <h4 class="blue"><b>Start unlocking here</b></h4>
    <select class="form-control" name="manufacturer">
    <option>Acatel</option>
    <option>Apple</option>
@@ -231,18 +231,18 @@
    </p>
    <br>
    <p>
-   <h4 class="yellow">BUY ALL NEW GEVEYS SIMS HERE!!</h4>
+   <h4 class="blue">BUY ALL NEW GEVEYS SIMS HERE!!</h4>
    <img src="../public/img/RSIM_10.jpg" class="img-responsive">
    </p>
-   <p class="whyt"><a href="{{URL::to('store')}}">Click here to gevey store and buy now !! &raquo;</a></p>
+   <p class="blue"><a href="{{URL::to('store')}}">Click here to gevey store and buy now !! &raquo;</a></p>
    <br>
    <img src="img/mb2.png">
-   <p class="whyt">We ensure 100% money back guarantee for unlocking failure from our network or system</p>
+   <p class="blck">We ensure 100% money back guarantee for unlocking failure from our network or system</p>
    <br>
    <img src="img/iphone_check.png" width="220">
-   <p><a class="yellow text-center" href="">Click here to check phone status >></a></p>
+   <p><a class="blue text-center" href="">Click here to check phone status >></a></p>
     <img src="img/imeichecker.png" width="220">
-    <p><a class="yellow" href="">Click here to check phone status >></a></p>
+    <p><a class=" btn btn-primary" href="">Click here to check phone status >></a></p>
    <br>
    <p>
     <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="220" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
