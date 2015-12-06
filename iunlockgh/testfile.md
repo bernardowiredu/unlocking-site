@@ -1,0 +1,1 @@
+This is a text file for the operation of git and this is the trial version for the old same for the same thing

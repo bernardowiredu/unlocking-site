@@ -34,7 +34,7 @@
 
 </div>
 
-<h4 class="well well-sm"><b class="blue">IMEI Checker – Check Carrier, Lock Status and Firmware, Model name....</b></h4>
+<h4 class="well well-sm"><b class="blue">this is to test my changes</b></h4>
 
 IMEI checking service is to check info like carrier name, lock status, model name, Serial, iOS firmware, ICCID, Activation status and some other details. 
 
